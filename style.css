@@ -75,10 +75,19 @@ h2 {
 
   body {
     padding: 10px; 
+  height: 55vh;
+  background-image: url("./images/topography.svg"), linear-gradient( #c29b32);
+
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 912px) {
+
+body{
+  height: 55vh;
+  background-image: url("./images/topography.svg"), linear-gradient(#9a9ea0);
+
+}
   .container {
     padding: 20px 10px; 
   }
