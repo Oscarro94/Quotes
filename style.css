@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/topography.svg"), linear-gradient(110deg, #e0de39, #8d9177);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background-color: #ffffff79;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 100%;
+  width: 800px;
+}
+
+h2 {
+  margin: 0;
+  letter-spacing: 1px;
+  background-color: rgb(10, 10, 10);
+  color: #fff;
+}
+
+.quote{
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  margin: 20px auto;
+  max-width: 600px;
+  color: #000000;
+}
+
+.btn {
+  background-color: #020202;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 14px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+/* ========== Media/Queries ========== */
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%; 
+    padding: 30px 15px; 
+  }
+
+  .quote {
+    font-size: 24px; 
+    line-height: 32px;
+  }
+
+  body {
+    padding: 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 10px; 
+  }
+
+  .quote {
+    font-size: 20px; 
+    line-height: 28px;
+  }
+
+  h2 {
+    font-size: 18px; 
+  }
+
+  .btn {
+    padding: 10px 30px; 
+    font-size: 14px;
+  }
+}
